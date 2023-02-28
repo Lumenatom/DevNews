@@ -7,6 +7,7 @@ import { AllNewsScreen } from "./AllNewsScreen";
 import { PageArticleScreen } from "./PageArticleScreen";
 import { PageNewsScreen } from "./PageNewsScreen";
 import { StyleSheet } from "react-native";
+import { COLORS } from "../CONSTANS";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,7 +18,12 @@ export const Navigation = () => {
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
-          options={{ title: "News" }}
+          options={{
+            title: "Home",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
         />
         <Stack.Screen
           name="AllArticlesScreen"

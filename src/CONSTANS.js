@@ -5,6 +5,7 @@ export const COLORS = {
   sky: "#7fe7dc",
   red: "#f47a60",
   gray: "#ced7d8",
+  green: "green",
 };
 export const SIZES = {
   base: 8,

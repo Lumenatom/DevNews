@@ -1,17 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { SIZES } from "../CONSTANS";
+import { ScrollView } from "react-native";
+import { NewsBlock } from "../components/NewsBlock";
+import { ArticlesBlock } from "../components/ArticlesBlock";
 
 export const HomeScreen = () => {
   return (
-    <View style={styles.homeWrapper}>
-      <Text>HomeScreen</Text>
-    </View>
+    <ScrollView>
+      <NewsBlock />
+      <ArticlesBlock />
+    </ScrollView>
   );
 };
-
-const styles = StyleSheet.create({
-  homeWrapper: {
-    padding: SIZES.padding,
-  },
-});
